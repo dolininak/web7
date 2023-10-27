@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap.min.css" rel="stylesheet" >
+<title>Задание 6</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="index.js"></script>
+</head>
+<body>
+    
+<div class=" m-5 row d-flex " >
+    <div class= "col-12 d-flex justify-content-center p-2"><input id="kol" type="number" placeholder="введите количество "></div>
+    <div class= "col-12 d-flex justify-content-center p-2"><select id="konf">
+        <option disabled>Выберете конфеты</option>
+        <option  value="rod" data-price="170" >Конфеты Родные просторы с вафельной крошкой 180г 170 рублей </option>
+        <option value="merci" data-price="300">Набор шоколадных конфет Merci Ассорти 8 видов шоколада 250г  300 рублей</option>
+        <option value="tofo" data-price="140">Конфеты Toffifee Лесной орех в карамели 125г 140 рублей</option>
+        <option value="kor" data-price="270">Конфеты Коркунов Ассорти темный и молочный шоколад 192г/165г в ассортименте 270 рублей</option>
+        <option value="raf" data-price="400">Конфеты Raffaello с цельным миндальным орехом в кокосовой обсыпке 150г 400 рублей </option>
+        <option value="rot" data-price="170">Набор конфет Рот Фронт Птичье молоко настоящие 200г 170 рублей</option>
+        <option value="fer" data-price="420">Конфеты Ferrero Rocher хрустящие из молочного шоколада 125г 420 рублей</option>
+        <option value="kon" data-price="100">Конфета Konfesta глазированная с кокосовой начинкой 150г 100 рублей</option>
+        <option value="rafm" data-price="350">Конфеты Raffaello Маракуйя 150г 350 рублей</option>
+        <option value="pral" data-price="250">Конфеты Шоколадные Praliness 200г 250 рублей</option>
+        <option value="dim" data-price="250">Конфеты Dimler шоколадные Вишня бренди/Сливочный ликер микс 150г 250 рублей</option>
+        <option value="tofb" data-price="140">Конфеты Toffifee белый шоколад 125г 140 рублей</option>
+    </select></div>
+    <div class= "col-12 d-flex justify-content-center p-2 ">
+        <p><input name="dost" id="dost1" class="mx-4"  type="radio" value="100" > доставка на почту(+100 рублей)</p>
+        <p><input name="dost" id="dost1" class="mx-4" type="radio" value="0" > самовывоз из магазина</p>
+        <p><input name="dost" id="dost1" class="mx-4" type="radio" value="200" > доставка курьером(+200)</p>
+
+    </div>
+    <div class="ncontainer" id="tipm">
+    <div class= " selector col-12 d-flex justify-content-center p-2 ">
+        <select >
+            <option disabled>Выберете тип магазина </option>
+            <option  value="gip" data-price="100" >Гипермаркет(+100 рублей)</option>
+            <option value="dom" data-price="10">Магазин у дома(+10 рублей)</option>
+        </select>
+    </div>
+</div>
+<div class="n1container" id="chek">
+    <div class= "chek col-12  row d-flex p-2"  >
+    <div class="col-12 d-flex justify-content-center" ><p><input name="check2"  type="checkbox" value="1.1" > оставить у двери (+10%)</p></div>
+    <div class="col-12 d-flex justify-content-center" ><p><input name="check2"  type="checkbox" value="1.2"> возможность выбрать время доставки(+20%)</p></div>
+    </div> 
+</div>
+</div>
+    <p class="js-output p-2"></p>
+    
+
+    
+</body>
+</html>
